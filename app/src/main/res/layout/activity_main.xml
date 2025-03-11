@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Event Planner"
+        android:textColor="#bdb2ff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnSelectImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Select Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eventplanner2"
+
+        />
+
+    <TextView
+        android:id="@+id/tvSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Date not selected"
+        android:textColor="#c59fc9"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#abc8c7"
+        android:text="Pick Date"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tvEventType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select event type"
+        android:textColor="#c08497"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioWedding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding"
+            android:textColor="#64a6bd"
+            android:textStyle="bold"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textColor="#64a6bd"
+            android:textStyle="bold"
+
+
+            />
+
+        <RadioButton
+            android:id="@+id/radioConference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conference"
+            android:textColor="#64a6bd"
+            android:textStyle="bold"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAdditionalServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Additional Services"
+        android:textColor="#c08497"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbCatering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="#ffafcc"
+            android:text="Catering"
+            android:textColor="#64a6bd"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbPhotography"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="#ffafcc"
+            android:text="Photography"
+            android:textColor="#64a6bd"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbLiveMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:buttonTint="#ffafcc"
+            android:text="Live Music"
+            android:textColor="#64a6bd"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#abc8c7"
+        android:text="Submit"
+        android:textStyle="bold"
+
+        />
+
+
+</LinearLayout>
